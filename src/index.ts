@@ -11,8 +11,8 @@ function validatePath(str: string) {
     if (!fs.existsSync(str)) {
       console.log("First run creating the directory", str);
       fs.mkdirSync(str);
-      directory = str;
     }
+    directory = str;
   } catch (err) {
     console.error(
       "The specified path is not valid cannot acces or create the output directory"
